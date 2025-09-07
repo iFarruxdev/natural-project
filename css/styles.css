@@ -19,7 +19,8 @@ body {
   margin: 0;
   font-size: 16px;
   line-height: 1.5;
-  font-family: Arial, sans-serif;
+  font-family: "Roboto Condensed" , Arial, sans-serif;
+  font-weight: 400;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -55,6 +56,9 @@ img {
 
 .global-wrapper {
   width: 100%;
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-grow: 1;
 }
@@ -71,6 +75,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
+  padding: 24px;
 }
 .site-hero > .hero-content {
   width: 100%;
@@ -83,12 +88,22 @@ img {
   color: #fff;
   text-transform: uppercase;
   margin-bottom: 24px;
+  font-family: "Bebas Neue" , "Roboto Condensed" , Arial, sans-serif;
+  font-weight: 400;
 }
 .hero-link {
   display: inline-block;
   background-color: #1E90FF;
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Bebas Neue" , "Roboto Condensed" , Arial, sans-serif;
+}
+.hero-link:hover {
+  background-color: rgba(30, 144, 255, 0.8);
+}
+.hero-link:active {
+  background-color: rgba(30, 144, 255, 0.6);
 }
 .hero-link-inner {
   display: flex;
@@ -101,4 +116,18 @@ img {
   margin-right: 12px;
   background-image: url("../images/icon-star.svg");
   content: "";
+}
+
+/* RETINA IMG */
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .site-hero {
+    background-image: url("../images/back-img@2x.jpg");
+  }
 }
