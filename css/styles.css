@@ -24,7 +24,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  background-color: #222;
   color: #222;
 }
 
@@ -56,7 +56,7 @@ img {
 
 .global-wrapper {
   width: 100%;
-  max-width: 1536px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -116,6 +116,127 @@ img {
   margin-right: 12px;
   background-image: url("../images/icon-star.svg");
   content: "";
+}
+
+/* LASTEST */
+
+.lastest-videos {
+  width: 100%;
+  max-width: 600px;
+  padding: 54px;
+  background-color: #fff;
+}
+.lastest-videos-heading{
+  margin-top: 0;
+  font-size: 24px;
+  line-height: normal;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-family: "Bebas Neue" , "Roboto Condensed" , Arial, sans-serif;
+}
+.lastest-videos-divader{
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.lastest-videos-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.lastest-videos-item {
+  display: flex;
+  align-items: center;
+}
+.lastest-videos-item-image {
+  width: 160px;
+  height: auto;
+}
+.lastest-videos-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.lastest-videos-item-content {
+  padding: 16px;
+}
+.lastest-videos-item-content-heading {
+  margin: 0;
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-family: "Bebas Neue" , "Roboto Condensed" , Arial, sans-serif;
+  margin-bottom: 4px;
+}
+.lastest-videos-item-content-link {
+  text-decoration: none;
+  color: #222;
+}
+.lastest-videos-item-content-link:hover {
+  color: #1E90FF;
+}
+.lastest-videos-item-content-link:active {
+  color :rgba(30, 144, 255, 0.6);
+}
+.lastest-videos-item-content-meta {
+  display: flex;
+  align-items: center;
+  color: #888;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+.lastest-videos-item-content-published {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+}
+.lastest-videos-item-content-published::before {
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/icon-clock.svg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-right: 4px;
+  content: "";
+}
+.lastest-videos-item-content-visibaly {
+  display: flex;
+  align-items: center;
+}
+.lastest-videos-item-content-visibaly::before {
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/icon-clock.svg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-right: 4px;
+  content: "";
+}
+
+
+/* LOAD MORE */
+
+.load-more-button {
+  display: block;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  background-color: #1E90FF;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.load-more-button:hover {
+  background-color: rgba(30, 144, 255, 0.8);
+}
+.load-more-button:active {
+  background-color: rgba(30, 144, 255, 0.6);
 }
 
 /* RETINA IMG */
