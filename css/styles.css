@@ -135,6 +135,9 @@ img {
   font-family: "Bebas Neue" , "Roboto Condensed" , Arial, sans-serif;
 }
 .lastest-videos-divader{
+  border: none;
+  height: 1px;
+  background-color: #999;
   margin-top: 24px;
   margin-bottom: 24px;
 }
